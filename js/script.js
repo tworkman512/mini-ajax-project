@@ -30,7 +30,7 @@ function loadData() {
         nytimesUrl += '?' + $.param({
           'glocations': cityStr,
           'sort': "newest",
-          'api-key': "7305d9cc4edf4eeb8339b776c1f0267d"
+          'api-key': "YOUR-OWN-KEY-GOES-HERE"
         });
 
     $.getJSON(nytimesUrl, function(data){
@@ -78,15 +78,3 @@ function loadData() {
 };
 
 $('#form-container').submit(loadData);
-
-
-
-
-
-
-
-// my google maps API key below
-// AIzaSyClN0BkJez9nG0U-U9sOcLllB9eS6n7eKw
-
-// my NYTimes API key for Article Search below
-// 7305d9cc4edf4eeb8339b776c1f0267d
